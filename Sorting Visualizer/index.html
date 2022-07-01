@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Sorting Algorithm Visualizer</h1>
+    <h2>Input Size of Array</h2>
+    <p id="confirm">Please input size of array</p>
+    <input type="text" id="input" class = "box"/>
+
+    <button class="submit">Submit</button>
+
+    <h2>Speed of Visualizer</h3>
+    <div class="slideContainer">
+      <input
+        type="range"
+        min="1"
+        max="100"
+        value=""
+        class="slider"
+        id="myRange"
+      />
+    </div>
+
+    <div class="buttons">
+      <button id="generate">Generate Random Array</button>
+      <button id="insertion">Insertion Sort</button>
+      <button id="selection">Selection Sort</button>
+      <button id="bubble">Bubble Sort</button>
+      <button id="reset">Reset</button>
+
+      <div class = "explanation">
+        <p id="explanation">Explanation of sorting algorithms</p>
+        <p id = "complexity"> test</p>
+      </div>
+      
+    </div>
+    <div class="container">
+      <div class="container-bars"></div>
+    </div>
+  </body>
+</html>
