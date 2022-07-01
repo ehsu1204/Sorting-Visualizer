@@ -51,7 +51,7 @@ function random() {
 function add_bars(input) {
   const Div = document.createElement("div");
   Div.className = "bars";
-  Div.innerHTML = `${input}`;
+
   let value = input * 10;
   Div.style.height = `${value - 2}px`;
   let testing = 1500 / inputval;
