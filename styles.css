@@ -1,6 +1,6 @@
 body {
   overflow: hidden;
-  background-color: grey;
+  background-color: rgb(89, 87, 87);
 }
 .buttons button {
   display: block;
@@ -8,58 +8,93 @@ body {
   height: 80px;
   margin-bottom: 30px;
   font-size: large;
-  background-color: aqua;
+  background-color: rgb(58, 57, 57);
   border-radius: 8px;
-
+  font-family: "Lucida Console", "Courier New", monospace;
+  color: white;
   margin-top: 10px;
 }
-
+.buttons button:hover {
+  border-color: white;
+}
+.submit {
+  font-size: 20px;
+}
 .container {
-  background-color: Black;
-  height: 1000px;
+  background-color: rgb(37, 35, 35);
+  height: 80%;
   position: absolute;
-  width: 1500px;
+  width: 60%;
   left: 500px;
   top: 150px;
 }
 
 .bars {
   float: left;
-  height: 200px;
-  border: 1px solid green;
-  width: 18px;
-  background-color: rgb(111, 25, 25);
+  height: 100%;
+  border: 1px solid rgb(232, 10, 10);
+  width: 1%;
+  background-color: rgb(218, 215, 215);
 }
 
 #explanation {
   font-size: 30px;
   font-weight: bold;
 }
-
 .slider {
   -webkit-appearance: none; /* Override default CSS styles */
   appearance: none;
-  border-radius: 8px;
+  border-radius: 5px;
 
-  height: 20px; /* Specified height */
-  background: #d3d3d3; /* Grey background */
+  height: 25px; /* Specified height */
+  background: #696767; /* Grey background */
   outline: none; /* Remove outline */
+  margin-bottom: 10px;
+  width: 250px;
+}
+.slider:hover {
+  border-color: white;
+  background-color: white;
 }
 
 .box {
-  border: 2px solid red;
+  border: 2px solid grey;
   padding: 12px 20px;
   margin: 8px 2px;
   box-sizing: border-box;
   border-radius: 8px;
+  background-color: rgb(108, 106, 106);
+  color: white;
+  font-size: 25px;
 }
-
+.box:hover {
+  border-color: white;
+}
 .submit {
+  background-color: rgb(58, 57, 57);
   border-radius: 8px;
   margin: 8px 2px;
+  color: white;
+  height: 40px;
+}
+
+.submit:hover {
+  border-color: white;
 }
 
 h1 {
   text-align: center;
   font-size: 50px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  color: white;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  color: white;
+}
+
+p {
+  font-size: 25px;
 }

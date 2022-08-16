@@ -10,21 +10,29 @@
   </head>
   <body>
     <h1>Sorting Algorithm Visualizer</h1>
+    <div class = "instructions">
+        <h2>Instructions</h2>
+        <p>1. Enter an input size <br>
+          (ideally something smaller than 100 <br>
+          to visualize better) and click create</p>
+        <p>2. Generate a random array</p>
+        <p>3. Sort the array</p>
+    </div>
     <h2>Input Size of Array</h2>
     <p id="confirm">Please input size of array</p>
     <input type="text" id="input" class = "box"/>
 
-    <button class="submit">Submit</button>
+    <button class="submit">Create</button>
 
     <h2>Speed of Visualizer</h3>
     <div class="slideContainer">
       <input
         type="range"
         min="1"
-        max="100"
+        max="200"
         value=""
         class="slider"
-        id="myRange"
+
       />
     </div>
 
@@ -36,7 +44,7 @@
       <button id="reset">Reset</button>
 
       <div class = "explanation">
-        <p id="explanation">Explanation of sorting algorithms</p>
+
         <p id = "complexity"></p>
       </div>
       
@@ -44,5 +52,9 @@
     <div class="container">
       <div class="container-bars"></div>
     </div>
+    <footer>
+      <p>© 2022 Created by Ethan Hsu</p>
+    </footer>
+
   </body>
 </html>

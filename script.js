@@ -13,12 +13,11 @@ const submit = document.querySelector(".submit");
 const slider = document.querySelector(".slider");
 let inputval = parseInt(document.querySelector("#input").value);
 let array;
-let speed;
+let speed = 50;
 let width;
 
 slider.addEventListener("input", function () {
   speed = this.value;
-  console.log(speed);
 });
 
 function createArray(value) {
@@ -32,6 +31,7 @@ reset.addEventListener("click", function () {
 
 generate.addEventListener("click", function () {
   resetArray();
+
   if (array === undefined) {
     alert("please input size of array");
   } else {
@@ -50,13 +50,14 @@ function random() {
 
 function add_bars(input) {
   const Div = document.createElement("div");
+  const containerWidth = container.clientWidth;
+  const containerHeight = container.clientHeight;
+  const barWidth = containerWidth / inputval - 2;
   Div.className = "bars";
 
-  let value = input * 10;
-  Div.style.height = `${value - 2}px`;
-  let testing = 1500 / inputval;
+  Div.style.height = `${(containerHeight / 100) * input}px`;
 
-  Div.style.width = `${testing - 2}px`;
+  Div.style.width = `${barWidth}px`;
 
   containerBars.append(Div);
 }
@@ -89,7 +90,7 @@ submit.addEventListener("click", function () {
     createArray(inputval);
     document.querySelector(
       "#confirm"
-    ).innerHTML = `Size of ${inputval} array created`;
+    ).innerHTML = `Size of ${inputval} array created!!!!`;
   }
 });
 
@@ -98,7 +99,7 @@ submit.addEventListener("click", function () {
 function timer(time) {
   return new Promise((resolve) => setTimeout(() => resolve(), time));
 }
-
+console.log(speed);
 //Insertion Sort
 async function insertionSort(array) {
   for (i = 1; i < array.length; i++) {
