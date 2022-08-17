@@ -53,7 +53,7 @@ function add_bars(input) {
   const containerWidth = container.clientWidth;
   const containerHeight = container.clientHeight;
   //prettier-ignore
-  const barWidth = (containerWidth / inputval) - 2;
+  const barWidth = (containerWidth / inputval);
   Div.className = "bars";
   //prettier-ignore
   Div.style.height = `${((containerHeight / 100) * input) - 2}px`;

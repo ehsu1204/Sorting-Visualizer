@@ -106,3 +106,7 @@ p {
 .footer {
   margin-left: 5px;
 }
+
+* {
+  box-sizing: border-box;
+}
