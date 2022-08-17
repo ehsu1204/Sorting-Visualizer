@@ -1,11 +1,13 @@
 body {
-  overflow: hidden;
   background-color: rgb(89, 87, 87);
+  margin-right: auto;
+  margin-left: auto;
 }
 .buttons button {
+  margin-left: 5px;
   display: block;
-  width: 125px;
-  height: 80px;
+  width: 10%;
+  height: 50%;
   margin-bottom: 30px;
   font-size: large;
   background-color: rgb(58, 57, 57);
@@ -22,25 +24,24 @@ body {
 }
 .container {
   background-color: rgb(37, 35, 35);
-  height: 80%;
   position: absolute;
-  width: 60%;
-  left: 500px;
+  height: 600px;
+  width: 800px;
+  left: 400px;
   top: 150px;
+
+  /* 
+  border-radius: 5px; */
+  /* border: 10px solid white; */
 }
 
 .bars {
   float: left;
-  height: 100%;
   border: 1px solid rgb(232, 10, 10);
-  width: 1%;
+
   background-color: rgb(218, 215, 215);
 }
 
-#explanation {
-  font-size: 30px;
-  font-weight: bold;
-}
 .slider {
   -webkit-appearance: none; /* Override default CSS styles */
   appearance: none;
@@ -51,6 +52,7 @@ body {
   outline: none; /* Remove outline */
   margin-bottom: 10px;
   width: 250px;
+  margin-left: 5px;
 }
 .slider:hover {
   border-color: white;
@@ -65,7 +67,8 @@ body {
   border-radius: 8px;
   background-color: rgb(108, 106, 106);
   color: white;
-  font-size: 25px;
+  font-size: 15px;
+  height: 10px;
 }
 .box:hover {
   border-color: white;
@@ -84,17 +87,22 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   font-family: "Lucida Console", "Courier New", monospace;
   color: white;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 20px;
   font-family: "Lucida Console", "Courier New", monospace;
   color: white;
 }
 
 p {
-  font-size: 25px;
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+.footer {
+  margin-left: 5px;
 }

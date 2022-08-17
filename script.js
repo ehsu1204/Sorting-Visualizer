@@ -52,14 +52,16 @@ function add_bars(input) {
   const Div = document.createElement("div");
   const containerWidth = container.clientWidth;
   const containerHeight = container.clientHeight;
-  const barWidth = containerWidth / inputval - 2;
+  //prettier-ignore
+  const barWidth = (containerWidth / inputval) - 2;
   Div.className = "bars";
-
-  Div.style.height = `${(containerHeight / 100) * input}px`;
+  //prettier-ignore
+  Div.style.height = `${((containerHeight / 100) * input) - 2}px`;
 
   Div.style.width = `${barWidth}px`;
-
   containerBars.append(Div);
+  console.log(barWidth);
+  console.log(containerWidth);
 }
 
 function populate_array() {
